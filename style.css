@@ -1,4 +1,4 @@
-/* ================================================
+css/* ================================================
    SITE PESSOAL - CINTHIA MOREIRA
    Paleta: Preto, Marrom e Dourado
    ================================================ */
@@ -341,4 +341,19 @@ footer p {
     gap: 1.5rem;
   }
 
+}
+
+
+/* ========== ANIMAÇÃO DE SCROLL ========== */
+/* Estado inicial: invisível e deslocado pra baixo */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Quando o JS adiciona "visible", o elemento aparece suavemente */
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
